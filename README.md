@@ -1,13 +1,14 @@
-# js-lab-106
-### Lab106 Function: Fundamental1
-ให้เรียกใช้ฟังก์ชัน ask โดย 
-- Parameter ตัวแรกเป็น 'Do you agree?'
-- Parameter ตัวที่สองเป็นฟังก์ชันที่เมื่อทำงานแล้วจะ alert คำว่า “I’m agree with you ?”
-- Parameter ตัวที่สามเป็นฟังก์ชันที่เมื่อทำงานแล้วจะ alert คำว่า “whyyyyyyy !”
+# js-lab-107
+### Lab107 Function: Fundamental2
+ให้สร้างฟังก์ชัน checkPermission โดยมีพารามิเตอร์ 3 ตัว
+- ตัวแรกเป็น role
+- ตัวที่สองเป็นฟังก์ชันและทำงานเมื่อ role มีค่าเท่ากับ “ADMIN”
+- ตัวที่สามเป็นฟังก์ชันและทำงานเมื่อ role ไม่ใช่ “ADMIN”
+ให้ลองเรียกใช้ฟังก์ชันโดย
+- ถ้า role เป็น “ADMIN” ให้ alert “ACCESS GRANTED”
+- ถ้า role ไม่ใช่ “ADMIN” ให้ alert “ACCESS DENIED”
 
 ```JavaScript
-function ask(question, yes, no) {
-  if (confirm(question)) yes();
-  else no();
-}
+checkPermission("ADMIN", isAdminAction, isNotAdminAction);
+checkPermission("USER", isAdminAction, isNotAdminAction);
 ```
